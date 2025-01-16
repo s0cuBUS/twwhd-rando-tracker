@@ -199,9 +199,9 @@ export default class Images {
           3: import('../images/item21_3_a.png'),
           4: import('../images/item21_4_a.png'),
         },
-        [LogicHelper.ITEMS.TINGLE_TUNER]: {
-          0: import('../images/item7.png'),
-          1: import('../images/item7_a.png'),
+        [LogicHelper.ITEMS.TINGLE_BOTTLE]: {
+          0: import('../images/tingle_bottle_gray.png'),
+          1: import('../images/tingle_bottle_color.png'),
         },
         [LogicHelper.ITEMS.PROGRESSIVE_PICTO_BOX]: {
           0: import('../images/item8.png'),

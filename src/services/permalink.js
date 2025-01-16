@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import { ToastContainer, toast } from 'react-toastify';
 
 import OPTIONS from '../data/options.json';
 import PROGRESSIVE_STARTING_ITEMS from '../data/progressive-starting-items.json';
@@ -23,7 +24,9 @@ class Permalink {
     [this.OPTIONS.SWORD_MODE]: SWORD_MODE_OPTIONS,
   };
 
-  static DEFAULT_PERMALINK = 'MS4xMC4wAEEABwEDAAygvgMA0AACAAAAAAGAIAAA';
+  //static DEFAULT_PERMALINK = 'MS4xMC4wAEEABwEDAAygvgMA0AACAAAAAAGAIAAA';
+  //static DEFAULT_PERMALINK = 'MS4xMC4wAEEA1wcjAAYAAAcIIAABAAAAAAAAYAAA';  //Permalink with TWWHD Obscure option
+  static DEFAULT_PERMALINK = 'MS4xMC4wAEEADQIGAAwAAA4QQAAIAAAAAAQAAgAAAA';  //Permalink with TWWHD Obscure and Dungeon Secrets option
 
   static decode(permalinkString) {
     const binaryString = BinaryString.fromBase64(permalinkString);
@@ -50,6 +53,7 @@ class Permalink {
     this._stringConfig(this.OPTIONS.VERSION),
     this._stringConfig(this.OPTIONS.SEED_NAME),
     this._booleanConfig(this.OPTIONS.PROGRESSION_DUNGEONS),
+    this._booleanConfig(this.OPTIONS.PROGRESSION_DUNGEON_SECRETS),
     this._booleanConfig(this.OPTIONS.PROGRESSION_GREAT_FAIRIES),
     this._booleanConfig(this.OPTIONS.PROGRESSION_PUZZLE_SECRET_CAVES),
     this._booleanConfig(this.OPTIONS.PROGRESSION_COMBAT_SECRET_CAVES),
@@ -71,20 +75,25 @@ class Permalink {
     this._booleanConfig(this.OPTIONS.PROGRESSION_BATTLESQUID),
     this._booleanConfig(this.OPTIONS.PROGRESSION_SAVAGE_LABYRINTH),
     this._booleanConfig(this.OPTIONS.PROGRESSION_ISLAND_PUZZLES),
+    this._booleanConfig(this.OPTIONS.PROGRESSION_OBSCURE),
     this._booleanConfig(this.OPTIONS.KEYLUNACY),
+
     this._dropdownConfig(this.OPTIONS.RANDOMIZE_ENTRANCES),
+
     this._booleanConfig(this.OPTIONS.RANDOMIZE_CHARTS),
     this._booleanConfig(this.OPTIONS.RANDOMIZE_STARTING_ISLAND),
     this._booleanConfig(this.OPTIONS.CHEST_TYPE_MATCHES_CONTENTS),
     this._booleanConfig(this.OPTIONS.FISHMEN_HINTS),
     this._booleanConfig(this.OPTIONS.HOHO_HINTS),
     this._booleanConfig(this.OPTIONS.KORL_HINTS),
+
     this._spinBoxConfig(this.OPTIONS.NUM_PATH_HINTS, 0, 15),
     this._spinBoxConfig(this.OPTIONS.NUM_BARREN_HINTS, 0, 15),
     this._spinBoxConfig(this.OPTIONS.NUM_LOCATION_HINTS, 0, 15),
     this._spinBoxConfig(this.OPTIONS.NUM_ITEM_HINTS, 0, 15),
     this._booleanConfig(this.OPTIONS.CRYPTIC_HINTS),
     this._booleanConfig(this.OPTIONS.PRIORITIZE_REMOTE_HINTS),
+
     this._booleanConfig(this.OPTIONS.SWIFT_SAIL),
     this._booleanConfig(this.OPTIONS.INSTANT_TEXT_BOXES),
     this._booleanConfig(this.OPTIONS.REVEAL_FULL_SEA_CHART),
@@ -169,7 +178,9 @@ class Permalink {
       decode: (binaryString, options) => {
         const dropdownIndex = binaryString.popNumber(BinaryString.BYTE_SIZE);
         const dropdownValue = _.get(dropdownOptions, dropdownIndex);
-
+        //const dropdownValue = 2;
+        
+        
         if (_.isNil(dropdownValue)) {
           // istanbul ignore next
           throw Error(`Invalid dropdown index: ${dropdownIndex} for option: ${optionName}`);

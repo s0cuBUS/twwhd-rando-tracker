@@ -121,7 +121,7 @@ class ItemsTable extends React.PureComponent {
                 this.item(LogicHelper.ITEMS.DEKU_LEAF),
                 this.item(LogicHelper.ITEMS.PROGRESSIVE_SWORD),
 
-                this.item(LogicHelper.ITEMS.TINGLE_TUNER),
+                this.item(LogicHelper.ITEMS.TINGLE_BOTTLE),
                 this.item(LogicHelper.ITEMS.PROGRESSIVE_PICTO_BOX),
                 this.item(LogicHelper.ITEMS.IRON_BOOTS),
                 this.item(LogicHelper.ITEMS.MAGIC_ARMOR),

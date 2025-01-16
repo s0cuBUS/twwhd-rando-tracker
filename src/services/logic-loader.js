@@ -27,7 +27,7 @@ class LogicLoader {
   }
 
   static _logicFileUrl(fileName) {
-    return `https://raw.githubusercontent.com/LagoLunatic/wwrando/${Settings.getVersion()}/logic/${fileName}`;
+    return `http://127.0.0.1/${fileName}`;
   }
 }
 

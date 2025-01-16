@@ -113,6 +113,7 @@ class BinaryString {
 
   static _binaryToBase64(binaryArray, bitOffset) {
     let binaryDataToLoad = binaryArray;
+
     if (bitOffset === 0) {
       // If the bit offset ends up being exactly 0, add a 0 byte to the end of
       // the binary data. This matches the behavior of permalink encoding in

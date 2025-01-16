@@ -249,6 +249,14 @@ export default class Launcher extends React.PureComponent {
             labelText: 'Eye Reef Chests',
             optionName: Permalink.OPTIONS.PROGRESSION_EYE_REEF_CHESTS,
           }),
+          this.toggleInput({
+            labelText: 'Obscure (HD)',
+            optionName: Permalink.OPTIONS.PROGRESSION_OBSCURE,
+          }),
+          this.toggleInput({
+            labelText: 'Dungeon Secrets (HD)',
+            optionName: Permalink.OPTIONS.PROGRESSION_DUNGEON_SECRETS,
+          }),
         ]}
       />
     );

@@ -3,6 +3,7 @@
   "version",
 
   "progression_dungeons",
+  "progression_dungeon_secrets",
   "progression_great_fairies",
   "progression_puzzle_secret_caves",
   "progression_combat_secret_caves",
@@ -10,6 +11,7 @@
   "progression_long_sidequests",
   "progression_spoils_trading",
   "progression_minigames",
+
   "progression_free_gifts",
   "progression_mail",
   "progression_platforms_rafts",
@@ -18,14 +20,16 @@
   "progression_big_octos_gunboats",
   "progression_triforce_charts",
   "progression_treasure_charts",
+  
   "progression_expensive_purchases",
   "progression_misc",
   "progression_tingle_chests",
   "progression_battlesquid",
   "progression_savage_labyrinth",
   "progression_island_puzzles",
-
+  "progression_obscure",
   "keylunacy",
+
   "randomize_entrances",
   "randomize_charts",
   "randomize_starting_island",
