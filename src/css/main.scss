@@ -261,7 +261,7 @@ button:hover:enabled {
   height: 346px;
   float: left;
   margin-right: 8px;
-  margin-bottom: 38px;
+  margin-bottom: 27px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -409,7 +409,7 @@ button:hover:enabled {
   margin-right: 8px;
   width: 364px;
   height: 346px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   .chart-map {
     font-size: 13px;
@@ -486,16 +486,16 @@ button:hover:enabled {
 
   .chest-counts {
     top: 15px;
-    font-size: 8px;
+    font-size: 0px;
   }
 
   .chests-available,
   .chests-total {
-    font-size: 15px;
+    font-size: 0px;
   }
 
   .map-item-info {
-    top: 10px;
+    top: 12px;
     font-size: 10px;
   }
 
