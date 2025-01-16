@@ -1,8 +1,9 @@
-# TWW Randomizer Tracker
+# TWWHD Randomizer Tracker
 
-[![Build Status](https://github.com/wooferzfg/tww-rando-tracker/workflows/CI/badge.svg)](https://github.com/wooferzfg/tww-rando-tracker/actions)
+This is a tracker for [The Wind Waker HD Randomizer](https://github.com/SuperDude88/TWWHD-Randomizer) based on the original Tracker from [wooferzfg](https://github.com/wooferzfg/tww-rando-tracker/)
 
-This is a tracker for [The Wind Waker Randomizer](https://github.com/LagoLunatic/wwrando). It's available at [wooferzfg.me/tww-rando-tracker](https://www.wooferzfg.me/tww-rando-tracker/).
+Not all functions of the Wind Waker HD Randomizer are implemented, jet. Only locations and options like Dungeon Secrets and Obscure locations were added. Permalink is currently bitbanged together.
+Will be working on getting things more and more compatible with the real deal. 
 
 ## Build Instructions
 
