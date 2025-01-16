@@ -409,7 +409,7 @@ button:hover:enabled {
   margin-right: 8px;
   width: 364px;
   height: 346px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 
   .chart-map {
     font-size: 13px;
@@ -480,13 +480,13 @@ button:hover:enabled {
   }
 
   .map-info {
-    top: 7px;
-    font-size: 20px;
+    top: 2px;
+    font-size: 10px;
   }
 
   .chest-counts {
-    top: 29px;
-    font-size: 10px;
+    top: 15px;
+    font-size: 8px;
   }
 
   .chests-available,
@@ -495,8 +495,8 @@ button:hover:enabled {
   }
 
   .map-item-info {
-    top: 50px;
-    font-size: 20px;
+    top: 10px;
+    font-size: 10px;
   }
 
   .zoom-map {
