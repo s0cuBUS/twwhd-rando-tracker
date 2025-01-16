@@ -20,7 +20,7 @@ cd tww-rando-tracker && npm install
 ```
 You can then build and serve the tracker application:
 ```bash
-npm start
+npm start -- --port 80
 ```
 After the server starts, you can go to [localhost:8080](http://localhost:8080/) to open the tracker.
 
