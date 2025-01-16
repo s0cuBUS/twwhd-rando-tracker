@@ -33,10 +33,6 @@ class Statistics extends React.PureComponent {
               <td>{logic.totalLocationsRemaining({ onlyProgressLocations })}</td>
               <td>Locations Remaining</td>
             </tr>
-          </tbody>
-        </table>
-        <table className="right-table">
-          <tbody>
             {!disableLogic && (
               <tr>
                 <td>{logic.itemsNeededToFinishGame()}</td>
